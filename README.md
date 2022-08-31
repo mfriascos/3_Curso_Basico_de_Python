@@ -108,9 +108,9 @@ No necesitamos la interfaz gráfica de nuestra computadora para poder usarla. Pa
 ### Comandos básicos para usar en la consola:
 
 * Ctrl + L = Limpiar pantalla
-* CD = Change Directory
+* cd = Change Directory
 * … = Carpeta padre
-* CD… = Cambiar de directorio a la carpeta padre
+* cd… = Cambiar de directorio a la carpeta padre
 * Alt + 92 =
 * ls = list
 * mkdir = Make directory

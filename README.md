@@ -116,7 +116,7 @@ No necesitamos la interfaz gráfica de nuestra computadora para poder usarla. Pa
 * mkdir = Make directory
 * touch = para crear archivos
 
-### Explorando Python: Operadores Aritméticos
+## 8/32 Explorando Python: Operadores Aritméticos
 
 Primero, para iniciar la consola interactiva de Python debemos escribir el comando **py **en Windows, pero en otros sistemas el comando es python3.
 Ahora, podemos comenzar.

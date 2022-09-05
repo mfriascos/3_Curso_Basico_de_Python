@@ -228,9 +228,9 @@ Podemos en cualquier momento cambiar el valor de nuestra variable volviendo a as
 
 ### Tipos de variables en Python
 
-a = 28 → int (entero)
-b = 1.5 → float (decimales)
-c = “Hello” → str (string o cadena de texto)
-d = True → boolean (verdadero o falso)
-e = None → NoneType (Sin valor)
-f = “5” → str (5 y “5” no son lo mismo. La primera es un entero y la segunda una cadena de texto)
+* a = 28 → int (entero)
+* b = 1.5 → float (decimales)
+* c = “Hello” → str (string o cadena de texto)
+* d = True → boolean (verdadero o falso)
+* e = None → NoneType (Sin valor)
+* f = “5” → str (5 y “5” no son lo mismo. La primera es un entero y la segunda una cadena de texto)

@@ -335,3 +335,44 @@ Conoce los operadores lógicos que tiene Python y cómo utilizarlos de manera ad
 * < (menor que): compara dos valores y determina si es menor que el otro.
 * ">= (mayor o igual): compara dos valores y determinas si es mayor o igual que el otro."
 * <= (menor o igual): compara dos valores y determinas si es menor o igual que el otro.
+
+## 13/32 Conversor de Monedas
+
+Verificar archivos conversor.py conversor_inverso.py
+
+## 14/32 Construyendo el Camino de un Programa con Condicionales
+
+Los condicionales son decisiones que se establecen desacuerdo a los parámetros que indiquemos, para obtener un tipo de resultado deseado.
+
+**Ejemplo:** si un número es mayor o igual que otro, los números deberán sumarse, de lo contrario deberán restarse. Debe cumplirse una condición para saber cuál será el camino a seguir.
+
+A continuación veremos cómo funcionan los condicionales en Python.
+
+**if**
+(Si) se usa para la condición principal.
+
+**elif**
+(Si no) en caso de que la condición principal o anterior no se cumpla, se puede utilizar para agregar otra condición.
+
+**else**
+(Sino) en caso de que la(s) condición(es) anterior(es) no se cumplan, se ejecuta como alternativa sin condicional.
+
+### En lenguaje natural (español)
+
+‘Si’ introduce una oración en la que se indica una condición real o hipotética que se ha de cumplir necesariamente para que sea cierto o se produzca lo que se expresa: Si corres, lo alcanzarás.
+
+‘Sino’ es una conjunción adversativa que se escribe en una sola palabra y se usa, principalmente, para contraponer un concepto a otro: No estudia, sino que trabaja.
+
+‘Si no’** introduce una oración condicional: Si no estudias, no aprobarás.
+
+### Ejemplo de condicionales en Python
+
+```Javascript
+edad = int(input("Escribe tu edad: "))
+
+if edad >= 18:
+    print("Usted es mayor de edad")
+
+else:
+    print("Usted es menor de edad")
+```

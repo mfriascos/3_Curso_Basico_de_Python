@@ -269,3 +269,50 @@ Usamos el comando type()
 x = 5
 print(type(x))
 ```
+
+## 11/32 Convertir un datos a un tipo diferente
+
+Cómo convertir un tipo de dato a otro en Python:
+
+Sintaxis | Descripción
+-----------|------------
+int(var) | variable a entero
+float(var) | variable a flotante
+str(var) | variable a texto
+bool(var) | variable a booleano
+abs(var) | variable a valor absoluto
+
+
+### Ejemplo de conversión de datos en Python
+```Javascript 
+>>> number1 = input("Escribe un número: ")
+Escribe un número: 4
+>>> number2 = input("Escribe otro número: ")
+Escribe un número: 5
+>>> numero1 + numero 2
+=> '45' <== Se concatenan
+```
+
+Solución:
+```Javascript
+>>> number1 = int(input("Escribe un numero: "))
+Escribe un numero: 100
+>>> number2 = int(input("Escribe otro numero: "))
+Escribe otro numero: 300
+>>> number1 + number2
+=> 400
+```
+
+Ejemplo 2:
+```Javascript
+>>> numero1 = 4.5
+int(numero1)
+=> 4 <== Trunca el flotante
+```
+
+Ejemplo 3:
+```Javascript
+>>> numero1 = 4.5
+str(numero1)
+=> '4.5' <== Lo convierte a texto
+```

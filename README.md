@@ -577,3 +577,43 @@ nombre[::-1]
 Al no haber parámetro en las 2 primeras posiciones, se interpreta que se arranca desde el inicio hasta el final, pero en pasos de 1 en 1 con la palabra al revés, porque es -1.
 El resultado sería
 "ocsicnarF"
+
+## 20/32 Proyecto: Palindromo 
+
+En este ejemplo, aprenderemos a detectar si una palabra es palíndromo en Python. Para el ejemplo utilizaremos “Luz azul”.
+
+Vamos a definir la función utilizando def:
+```Python
+def esPalindromo(palabra):
+	palabra = str(palabra).strip().lower()
+	palabra and print(palabra == palabra[::-1])
+esPalindromo(luzazul) # va a imprimir True.
+```
+
+**¿Qué acaba de ocurrir?**
+
+En la primera línea de la función, convertimos el valor recibido a string, eliminamos los espacios indeseados aplicando strip y formateamos a minúscula con lower.
+
+¿Por qué? Porque si ejecutamos esPalindromo(True) nuestro programa mostraría un error, ya que no se pueden ejecutar métodos strip y lower sobre datos de tipo booleano.
+
+En la segunda línea, ejecutando palabra and, lo que le decimos al programa es que si la variable palabra es Truty, ejecute el código después del and.
+
+Esta es una forma mucho más corta de correr el siguiente código:
+```Python
+if palabra == True:
+	#ejecutar.....
+```
+**Pero, ¿qué es un valor truty?**
+
+En programación, un valor truty es cualquier valor que, sin ser explícitamente un booleano True, la computadora lo interpreta como un true. Por ejemplo: cualquier número mayor a 0 o cualquier string que no este vacío.
+
+Luego, dentro del print() no es necesario hacer un if que retorne true o false, al hacer la comparación.
+```Python
+# if palabra == palabra[::-1]:
+#	return True
+# else:
+#	return False
+
+palabra == palabra[::-1]
+```
+Si la comparación es correcta, va a imprimir True, de lo contrario devolvera False.

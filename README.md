@@ -386,3 +386,20 @@ elif numero == 5:
 else:
     print("Es menor a 5")
 ```
+## 15/32 Varios Paises en mi Conversor de Monedas
+
+Un detalle muy importante en cualquier lenguaje de programación es conocer las diferencias entre los condicionales. En Python en particular, es crucial mencionar la diferencia entre if, elif y else.
+
+Diferencias entre if, else y elif
+
+### if:
+if se encarga de iniciar el condicional y solicitar un requisito para ejecutar todo el código por debajo, que conocemos como bloque de código.
+
+### else:
+Si se desea ejecutar otro código en caso de que no se cumpla el if. Por ejemplo: el usuario no elige la opción 1, entonces (else)…
+
+### elif:
+Se utiliza cuando utilizamos múltiples condiciones, lo que en el código de esta clase son la opción 2 y 3. En esta clase, teníamos la opción 1, pero debemos también evaluar qué pasa si el usuario elige la opción 2 o 3, por lo que decimos “que estamos evaluando múltiples condiciones”.
+
+### Añadir comentarios en Python
+Para realizar un comentario (de una sola línea), empleamos el “#”. Un comentario es simplemente texto, el cual no es ejecutado y no afecta en absoluto en el código. Se utiliza para explicar las líneas de código que hemos creado y hacerlas más fáciles de entender.

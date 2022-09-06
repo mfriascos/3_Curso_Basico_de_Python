@@ -403,3 +403,42 @@ Se utiliza cuando utilizamos múltiples condiciones, lo que en el código de est
 
 ### Añadir comentarios en Python
 Para realizar un comentario (de una sola línea), empleamos el “#”. Un comentario es simplemente texto, el cual no es ejecutado y no afecta en absoluto en el código. Se utiliza para explicar las líneas de código que hemos creado y hacerlas más fáciles de entender.
+
+## 16/32 Aprendiendo a no Repetir Código con Funciones 
+
+Las funciones ayudan a optimizar el código. Es decir, utilizar la menor cantidad de líneas dentro del código y evitar escribir acciones repetitivas.
+
+Esto nos sirve para entregar un código más limpio y con buenas prácticas, que no desperdicia recursos innecesariamente. En Python, para definir funciones empleamos def.
+
+Gracias a def, podemos “definir” funciones que emplearemos más tarde. Una función, en programación, es un grupo de instrucciones con un objetivo en particular y que se ejecuta cuando es “invocada”.
+
+Cuando la definimos, estamos dándole un conjunto de instrucciones o un algoritmo. Al ahorrar líneas de código con funciones logramos también que la legibilidad de este sea más fácil.
+
+### Cómo usar def en Python
+```Javascript
+def nombredelafuncion():
+    # instrucciones de la función
+```
+
+### Ejemplo de funciones con def en Python
+```Javascript
+def conversacion(opcion):
+    print('Hola')
+    print('Cómo estás')
+    print('Elegiste la opcion: ' + str(opcion))
+    print('Adiós')
+
+opcion = int(input('Ingrese una opción (1, 2, 3): '))
+
+if opcion == 1:
+    conversacion(opcion)
+
+elif opcion == 2:
+    conversacion(opcion)
+
+elif opcion == 3:
+    conversacion(opcion)
+
+else:
+    print('Escribe una opción correcta.')
+```

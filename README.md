@@ -494,14 +494,16 @@ Dependiendo de lo que este usuario ingrese en el input de la variable opción: U
 ```Python
 if opción == 1:
 conversor(“colombianos”, 3875)
+```
 Empleando elif, si se selecciona otra opción de la variable menu ingresado en el input de opción, se ajusta el protocolo en función a lo mostrado en menu.
-
+```Python
 elif opción == 2:
 conversor(“euros”, 0.8)
 elif opción == 3:
 conversor(“argentinos”, 65)
+```
 Si no se ingresa ningún dato relacionado dentro de las 3 opción de menu, se imprime que ingrese una opción correcta.
-
+```Python
 else:
 print(“ingresa una opción correcta”)
 ```

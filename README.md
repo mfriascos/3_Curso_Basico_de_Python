@@ -138,7 +138,7 @@ Operadores aritméticos en Python
 * Potencia: 2 ** 2
 * Raíz cuadrada:
 
-```javascript
+```Python
 math.sqrt(9)     
  3.0
 math.sqrt(11.11)   
@@ -205,7 +205,7 @@ Una variable es un lugar en memoria (una especie de caja) en el que podemos guar
 
 En Python, creamos las variables asignándoles un valor de la siguiente manera:
 
-```Javascript
+```Python
 <identificador> = <valor>
 ```
 
@@ -215,7 +215,7 @@ en este caso el signo = se lee como “asignar”
 
 Podemos en cualquier momento cambiar el valor de nuestra variable volviendo a asignar un valor al mismo identificador:
 
-```Javascript
+```Python
 <identificador> = <nuevo_valor>
 ```
 
@@ -265,7 +265,7 @@ Algunos operadores aritméticos pueden funcionar para operar con otros tipos de 
 Usamos el comando type()
 
 **Ejemplo:**
-```Javascript
+```Python
 x = 5
 print(type(x))
 ```
@@ -284,7 +284,7 @@ abs(var) | variable a valor absoluto
 
 
 ### Ejemplo de conversión de datos en Python
-```Javascript 
+```Python 
 >>> number1 = input("Escribe un número: ")
 Escribe un número: 4
 >>> number2 = input("Escribe otro número: ")
@@ -294,7 +294,7 @@ Escribe un número: 5
 ```
 
 Solución:
-```Javascript
+```Python
 >>> number1 = int(input("Escribe un numero: "))
 Escribe un numero: 100
 >>> number2 = int(input("Escribe otro numero: "))
@@ -304,14 +304,14 @@ Escribe otro numero: 300
 ```
 
 Ejemplo 2:
-```Javascript
+```Python
 >>> numero1 = 4.5
 int(numero1)
 => 4 <== Trunca el flotante
 ```
 
 Ejemplo 3:
-```Javascript
+```Python
 >>> numero1 = 4.5
 str(numero1)
 => '4.5' <== Lo convierte a texto
@@ -367,7 +367,7 @@ A continuación veremos cómo funcionan los condicionales en Python.
 
 ### Ejemplo de condicionales en Python
 
-```Javascript
+```Python
 edad = int(input("Escribe tu edad: "))
 
 if edad >= 18:
@@ -376,7 +376,7 @@ if edad >= 18:
 else:
     print("Usted es menor de edad")
 ```
-```Javascript
+```Python
 numero =int(input("Escribe un número: "))
 
 if numero > 5:
@@ -415,13 +415,13 @@ Gracias a def, podemos “definir” funciones que emplearemos más tarde. Una f
 Cuando la definimos, estamos dándole un conjunto de instrucciones o un algoritmo. Al ahorrar líneas de código con funciones logramos también que la legibilidad de este sea más fácil.
 
 ### Cómo usar def en Python
-```Javascript
+```Python
 def nombredelafuncion():
     # instrucciones de la función
 ```
 
 ### Ejemplo de funciones con def en Python
-```Javascript
+```Python
 def conversacion(opcion):
     print('Hola')
     print('Cómo estás')
@@ -441,4 +441,67 @@ elif opcion == 3:
 
 else:
     print('Escribe una opción correcta.')
+```
+
+## 17/32 Modularizando Nuestro Conversor de Monedas
+
+Para el siguiente ejemplo, crearemos el código para un conversor de monedas.
+
+En la primera parte se define la función que resumirá muchos procesos del programa. Usando def, se agrega la función “conversor” con los parámetros que varían dependiendo de las respuestas, que son: tipo de pesos y valor del dólar. Es decir, dentro del programa se definirá el valor de cada parámetro.
+```Python
+def conversor(tipo_pesos, valor_dolar):
+```
+En la variable pesos se plantea que el usuario introduzca con input la cantidad de pesos que tiene, encontrando el primer parámetro, que es el tipo de pesos, que se establece más adelante por fuera de la función, ya que es un protocolo.
+```Python
+pesos = input("¿Cuántos pesos " + tipo_pesos + " tienes?: ")
+```
+Ese dato ingresado en la variable pesos se convierte de un string a un número con float.
+```Python
+pesos = float(pesos)
+```
+En este punto, la variable dólares aparece para definir cuánto cuesta, con base en los pesos ingresados anteriormente y el valor dólar que se definirá más tarde por fuera de la función, ya que es un protocolo.
+```Python
+dolares = pesos / valor_dolar
+```
+El valor, que probablemente sea decimal, se reduce con el atributo round dependiento de la variable dolares a solo 2 decimales.
+```Python
+dolares = round(dolares, 2)
+```
+Debido a que los dólares son obtenidos como números, se traducen a strings por medio del operador str
+```Python
+dolares = str(dolares)
+```
+Una vez obtenido el valor de los dolares en string, se imprime el resultado entre cadenas de texto.
+```Python
+print (“Tienes $ " + dolares + " dolares”)
+```
+Luego de establecer la función, se crea la variable menu que no se imprime y contiene texto de referencia.
+```Python
+menu = “”“
+Tienes dinero 💲
+Nosotros la convertimos 💰
+1 - cop
+2 - eur
+3 - arg
+Elige una opción: “””
+```
+Ya definida la variable menu, se crea la variable opción que dependerá de lo ingresado en input por el usuario en relación con la variable menu. Es decir, que se imprime menu y se deja el espacio para obtener un dato digitado por el usuario, que luego es traducido en número usando int.
+
+```Python
+opción = int(input(menu))
+``` 
+Dependiendo de lo que este usuario ingrese en el input de la variable opción: Usando if, si es igual a 1, entonces se ejecuta la función anterior de conversor. Dentro de esta se establece el protocolo de tipo de peso para este caso y en relación con menu que es Colombianos. El protocolo de valor del dólar se define con base en el tipo de peso
+```Python
+if opción == 1:
+conversor(“colombianos”, 3875)
+Empleando elif, si se selecciona otra opción de la variable menu ingresado en el input de opción, se ajusta el protocolo en función a lo mostrado en menu.
+
+elif opción == 2:
+conversor(“euros”, 0.8)
+elif opción == 3:
+conversor(“argentinos”, 65)
+Si no se ingresa ningún dato relacionado dentro de las 3 opción de menu, se imprime que ingrese una opción correcta.
+
+else:
+print(“ingresa una opción correcta”)
 ```

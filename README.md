@@ -6,7 +6,7 @@
 
 **Table of Contents**
 
-- [1/32 El arte de la programación](#1/32-el-arte-de-la-programacion)
+- [1/32 El arte de la programación]
 
 ## 1/32 El arte de la programación
 

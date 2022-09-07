@@ -2,7 +2,13 @@
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
-Curso básico de Python otorgado por Platzi
+**Curso básico de Python otorgado por Platzi, todos los derechos a Platzi y a Facundo García Martoni**
+
+**Tabla de Contenido**
+[TOC]
+
+#1/32 El arte de la programación
+
 
 ## 1/32 El arte de la programamción 
 

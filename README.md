@@ -4,18 +4,15 @@
 
 **Curso básico de Python otorgado por Platzi, todos los derechos a Platzi y a Facundo García Martoni**
 
-**Tabla de Contenido**
+**Table of Contents**
 
 [TOCM]
 
 [TOC]
 
-#1/32 El arte de la programación
+##1/32 El arte de la programación
 
-
-## 1/32 El arte de la programamción 
-
-=============
+##1/32 El arte de la programación
 
 Los lenguajes de programación están por todos lados. Python un lenguaje que podemos aprender para iniciarnos en la ingeniería de software. Es utilizado en Drones, autos autónomos y hasta cohetes, nosrodea por todos lados.
 

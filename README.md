@@ -8,10 +8,71 @@
 
 - [El arte de la programación](#el-arte-de-la-programación)
 - [¿Por qué aprender Python?](#por-qué-aprender-python)
- - [Campos de uso de Python:](#campos-de-uso-de-python)
-- []
+  - [Campos de uso de Python:](#campos-de-uso-de-python)
+- [El núcleo de un programa: Los algoritmos](#el-núcleo-de-un-programa-los-algoritmos)
+  - [Definiciones de algoritmo](#definiciones-de-algoritmo)
+  - [¿Cómo se Diseña un Algoritmo?](#¿cómo-se-diseña-un-algoritmo)
+  - [Características de los Algoritmos](#características-de-los-algoritmos)
+- [Instalación de herramientas](#instalación-de-herramientas)
+  - [Editor de código](#editor-de-código)
+  - [Ejemplos de editor de código](#ejemplos-de-editor-de-código)
+  - [consola](#consola)
+  - [Lenguaje de programación](#lenguaje-de-programación)
+- [Tu mejor herramienta: La consola](#tu-mejor-herramienta-la-consola)
+  - [Comandos básicos para usar en la consola](#comandos-básicos-para-usar-en-la-consola)
+- [Explorando Python: Operadores Aritméticos](#explorando-python-operadores-aritméticos)
+  -[Python Keywords](#python-keywords)
+- [¿Qué es una variable?](#¿qué-es-una-variable)
+  - [Asignación de variables](#asignación-de-variables)
+  - [Reasignación de variables](#reasignación-de-variables)
+  - [Reglas en el uso de identificadores de variable](#reglas-en-el-uso-de-identificadores-de-variable)
+  - [Tipos de variables en Python](#tipos-de-variables-en-python)
+- [Los primitivos: Tipos de Datos Sencillos](#los-primitivos-tipos-de-datos-sencillos)
+  - [Tipos de datos primitivos en Python](#tipos-de-datos-primitivos-en-python)
+  - [Tipos de dato adicionales](#tipos-de-dato-adicionales)
+  - [¿Cómo saber el tipo de dato que estoy usando?](#¿cómo-saber-el-tipo-de-dato-que-estoy-usando)
+- [Convertir un datos a un tipo diferente](#convertir-un-datos-a-un-tipo-diferente)
+  -[Ejemplo de conversión de datos en Python](#ejemplo-de-conversión-de-datos-en-python)
+- [Operadores Lógicos y de Comparación en Python](#operadores-lógicos-y-de-comparación-en-python)
+  - [Operadores lógicos](#operadores-lógicos)
+  - [Operadores de comparación](#operadores-de-comparación)
+- [Conversor de Monedas](#conversor-de-monedas)
+- [Construyendo el Camino de un Programa con Condicionales](#construyendo-el-camino-de-un-programa-con-condicionales)
+  - [En lenguaje natural (español)](#en-lenguaje-natural-español)
+  - [Ejemplo de condicionales en Python](#ejemplo-de-condicionales-en-python)
+- [Varios Paises en mi Conversor de Monedas](#varios-paises-en-mi-conversor-de-monedas)
+  - [if:](#if)
+  - [else:](#else)
+  - [elif:](#elif)
+  - [Añadir comentarios en Python](#añadir-comentarios-en-python)
+- [Aprendiendo a no Repetir Código con Funciones](#aprendiendo-a-no-repetir-código-con-funciones)
+  - [Cómo usar def en Python](#cómo-usar-def-en-python)
+  - [Ejemplo de funciones con def en Python](#ejemplo-de-funciones-con-def-en-python)
+- [Modularizando Nuestro Conversor de Monedas](#modularizando-nuestro-conversor-de-monedas)
+- [Trabajando con Texto: Cadenas de Caracteres](#trabajando-con-texto-cadenas-de-caracteres)
+  - [Métodos para trabajar con texto en Python](#métodos-para-trabajar-con-texto-en-python)
+  - [Índices:](#índices)
+- [Trabajando con Texto: Slices](#trabajando-con-texto-slices)
+  - [Cómo usar slices en Python](#cómo-usar-slices-en-python)
+- [Proyecto: Palindromo](#proyecto-palindromo)
+- [Aprendiendo Bucles](#aprendiendo-bucles)
+  - [Ejemplo de bucle en Python](#ejemplo-de-bucle-en-python)
+  - [Ejemplo de bucle en la vida real](#ejemplo-de-bucle-en-la-vida-real)
+- [El Ciclo While](#el-ciclo-while)
+  - [Ejemplo de while en Python](#ejemplo-de-while-en-python)
 
-# El arte de la programación
+
+
+
+
+
+
+
+
+
+
+
+## El arte de la programación
 
 Los lenguajes de programación están por todos lados. Python un lenguaje que podemos aprender para iniciarnos en la ingeniería de software. Es utilizado en Drones, autos autónomos y hasta cohetes, nosrodea por todos lados.
 
@@ -24,7 +85,7 @@ Razones por iniciarse con Python
 * Programar es darle instrucciones a la computadora para que resuelva un problema.
 * La industria de tecnología es una de las que tienen mayor crecimiento.
 
-# ¿Por qué aprender Python?
+## ¿Por qué aprender Python?
 
 Python es lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma.
 
@@ -43,7 +104,7 @@ Python tienen una amplia gama de usos. Desde procesamiento de datos, al aprendiz
 * Videojuegos: Se encarga de combinar la programación, el diseño y la música para generar grandes experiencias a los usuarios.
 * Desarrollo móvil: Se encarga de crear aplicaciones que serán almacenadas en la PlayStore o AppStore, y que podremos hacer uso de ellas desde nuestros smartphones.
 
-## 3/32 El núcleo de un programa: Los algoritmos
+## El núcleo de un programa: Los algoritmos
 
 Dentro de todo lenguaje de programación existe un núcleo llamado algoritmo. Un algoritmo es una serie de pasos ordenados para resolver un problema. Este es finito, ordenado, y no ambiguo.
 
@@ -71,7 +132,7 @@ Las características fundamentales que debe cumplir todo algoritmo son:
 * Un algoritmo debe ser finito. el algoritmo se debe terminar en algún momento; o sea, debe tener un número finito de pasos.
 * Un algoritmo debe ser legible: El texto que lo describe debe ser claro, tal que permita entenderlo y leerlo fácilmente.
 
-## 4/32 Instalación de herramientas 
+## Instalación de herramientas 
 
 Para empezar a programar con Python, necesitaremos las siguientes herramientas:
 
@@ -104,11 +165,7 @@ Se utilizará cmder, porque tiene comandos compatibles con sistemas operativos d
 
 Python, que es el lenguaje más usado en el mundo y es ampliamente considerado el más fácil de aprender.
 
-## 5/32
-
-## 6/32
-
-## 7/32 Tu mejor herramienta: La consola 
+## Tu mejor herramienta: La consola 
 
 No necesitamos la interfaz gráfica de nuestra computadora para poder usarla. Para esto, nuestra mejor herramienta es la consola. La consola nos permite comunicarnos con el computador por medio de comandos y así realizar tareas sin la necesidad de utilizar el mouse en una interfaz, sino solamente a través del código.
 
@@ -123,7 +180,7 @@ No necesitamos la interfaz gráfica de nuestra computadora para poder usarla. Pa
 * mkdir = Make directory
 * touch = para crear archivos
 
-## 8/32 Explorando Python: Operadores Aritméticos
+## Explorando Python: Operadores Aritméticos
 
 Primero, para iniciar la consola interactiva de Python debemos escribir el comando **py **en Windows, pero en otros sistemas el comando es python3.
 Ahora, podemos comenzar.
@@ -204,7 +261,7 @@ while | To create a while loop
 with | Used to simplify exception handling
 yield | To end a function, returns a generator
 
-## 9/32 ¿Qué es una variable? 
+## ¿Qué es una variable? 
 
 Una variable es un lugar en memoria (una especie de caja) en el que podemos guardar objetos (números, texto, etc). Esta variable posee un identificador o nombre con el cual podemos llamarla más tarde cuando la necesitemos.
 
@@ -242,7 +299,7 @@ Podemos en cualquier momento cambiar el valor de nuestra variable volviendo a as
 * e = None → NoneType (Sin valor)
 * 33f = “5” → str (5 y “5” no son lo mismo. La primera es un entero y la segunda una cadena de texto)
 
-## 10/32 Los primitivos: Tipos de Datos Sencillos
+## Los primitivos: Tipos de Datos Sencillos
 
 Un objeto es una forma de modelar el mundo en programación. En los lenguajes de programación se caracterizan por tener métodos y atributos. En Python todo es un objeto.
 
@@ -277,7 +334,7 @@ x = 5
 print(type(x))
 ```
 
-## 11/32 Convertir un datos a un tipo diferente
+## Convertir un datos a un tipo diferente
 
 Cómo convertir un tipo de dato a otro en Python:
 
@@ -324,11 +381,11 @@ str(numero1)
 => '4.5' <== Lo convierte a texto
 ```
 
-## 12/32 Operadores Lógicos y de Comparación en Python
+## Operadores Lógicos y de Comparación en Python
 
 Conoce los operadores lógicos que tiene Python y cómo utilizarlos de manera adecuada:
 
-## Operadores lógicos
+### Operadores lógicos
 
 * and ( y ): compara dos valores, y si ambos son verdaderos, devuelve True.
 * or ( ó ): si al comparar dos valores y uno de los dos se cumple, devuelve True. Solo devuelve falso cuando los dos valores no se cumplen.
@@ -343,11 +400,11 @@ Conoce los operadores lógicos que tiene Python y cómo utilizarlos de manera ad
 * ">= (mayor o igual): compara dos valores y determinas si es mayor o igual que el otro."
 * <= (menor o igual): compara dos valores y determinas si es menor o igual que el otro.
 
-## 13/32 Conversor de Monedas
+## Conversor de Monedas
 
 Verificar archivos conversor.py conversor_inverso.py
 
-## 14/32 Construyendo el Camino de un Programa con Condicionales
+## Construyendo el Camino de un Programa con Condicionales
 
 Los condicionales son decisiones que se establecen desacuerdo a los parámetros que indiquemos, para obtener un tipo de resultado deseado.
 
@@ -393,7 +450,7 @@ elif numero == 5:
 else:
     print("Es menor a 5")
 ```
-## 15/32 Varios Paises en mi Conversor de Monedas
+## Varios Paises en mi Conversor de Monedas
 
 Un detalle muy importante en cualquier lenguaje de programación es conocer las diferencias entre los condicionales. En Python en particular, es crucial mencionar la diferencia entre if, elif y else.
 
@@ -411,7 +468,7 @@ Se utiliza cuando utilizamos múltiples condiciones, lo que en el código de est
 ### Añadir comentarios en Python
 Para realizar un comentario (de una sola línea), empleamos el “#”. Un comentario es simplemente texto, el cual no es ejecutado y no afecta en absoluto en el código. Se utiliza para explicar las líneas de código que hemos creado y hacerlas más fáciles de entender.
 
-## 16/32 Aprendiendo a no Repetir Código con Funciones 
+## Aprendiendo a no Repetir Código con Funciones 
 
 Las funciones ayudan a optimizar el código. Es decir, utilizar la menor cantidad de líneas dentro del código y evitar escribir acciones repetitivas.
 
@@ -450,7 +507,7 @@ else:
     print('Escribe una opción correcta.')
 ```
 
-## 17/32 Modularizando Nuestro Conversor de Monedas
+## Modularizando Nuestro Conversor de Monedas
 
 Para el siguiente ejemplo, crearemos el código para un conversor de monedas.
 
@@ -514,7 +571,7 @@ Si no se ingresa ningún dato relacionado dentro de las 3 opción de menu, se im
 else:
 print(“ingresa una opción correcta”)
 ```
-## 18/32 Trabajando con Texto: Cadenas de Caracteres
+## Trabajando con Texto: Cadenas de Caracteres
 
 Para trabajar con cadenas de texto en Python, vamos a aplicar una serie de métodos a las variables que hayamos creado anteriormente.
 Método: es una función especial, que existe para un tipo de dato en particular. Por ejemplo, si queremos que el texto ingresado se transforme en mayúsculas.
@@ -540,7 +597,7 @@ Se escriben entre corchetes al lado de la variable y son apuntadores numéricos 
 
 **Aclaración:** se comienza a contar caracteres desde el 0 (que es el primer número en informática). Siguiendo el ejemplo, la letra ‘F’ de ‘Facundo’ es el caracter número 0. Por ende, nombre[0], nos devolvería una F.
 
-## 19/32 Trabajando con Texto: Slices
+## Trabajando con Texto: Slices
 
 En Python, los slices, traducidos al español como “rebanadas”, nos permiten dividir los caracteres de un string de múltiples formas. A continuación, realizaremos un ejemplo cómo utilizarlos:
 
@@ -585,7 +642,7 @@ Al no haber parámetro en las 2 primeras posiciones, se interpreta que se arranc
 El resultado sería
 "ocsicnarF"
 
-## 20/32 Proyecto: Palindromo 
+## Proyecto: Palindromo 
 
 En este ejemplo, aprenderemos a detectar si una palabra es palíndromo en Python. Para el ejemplo utilizaremos “Luz azul”.
 
@@ -625,7 +682,7 @@ palabra == palabra[::-1]
 ```
 Si la comparación es correcta, va a imprimir True, de lo contrario devolvera False.
 
-## 21/32 Aprendiendo Bucles 
+## Aprendiendo Bucles 
 
 Un bucle es un ciclo continuo en todos los lenguajes de programación que nos permite iterar sobre nuestros pasos: magina un contador cíclico (1,2,3,4,5,6…) donde puedes agregar un paso más sobre tu programa principal.
 
@@ -660,7 +717,7 @@ if __name__ == "__main__":
 
 Cuando repetimos estas acciones en ese orden, durante un tiempo determinado o infinito estamos hablando de un bucle.
 
-## 22/32 El Ciclo While
+## El Ciclo While
 
 Un bucle while permite repetir la ejecución de un grupo de instrucciones mientras se cumpla una condición (es decir, mientras la condición tenga el valor True).
 
@@ -689,3 +746,4 @@ def run():
 if __name__ == "__main__":
     run()
 ```
+

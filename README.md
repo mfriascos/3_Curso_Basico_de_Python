@@ -6,10 +6,12 @@
 
 **Table of Contents**
 
-- [1/32 El arte de la programación](#132-el-arte-de-la-programación)
-- [2/32 ¿Por qué aprender Python?](#232-por-qué-aprender-python)
+- [El arte de la programación](#el-arte-de-la-programación)
+- [¿Por qué aprender Python?](#por-qué-aprender-python)
+ - [Campos de uso de Python:](#campos-de-uso-de-python)
+- []
 
-# 1/32 El arte de la programación
+# El arte de la programación
 
 Los lenguajes de programación están por todos lados. Python un lenguaje que podemos aprender para iniciarnos en la ingeniería de software. Es utilizado en Drones, autos autónomos y hasta cohetes, nosrodea por todos lados.
 
@@ -22,7 +24,7 @@ Razones por iniciarse con Python
 * Programar es darle instrucciones a la computadora para que resuelva un problema.
 * La industria de tecnología es una de las que tienen mayor crecimiento.
 
-# 2/32 ¿Por qué aprender Python?
+# ¿Por qué aprender Python?
 
 Python es lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma.
 

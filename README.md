@@ -6,7 +6,8 @@
 
 **Table of Contents**
 
-- [1/32 El arte de la programación]
+- [1/32 El arte de la programación](#1/32-El-Arte-De-La-Programación)
+- [2/32 ¿Por qué aprender Python?](#2/32-¿Por-qué-Aprender-Python?)
 
 ## 1/32 El arte de la programación
 

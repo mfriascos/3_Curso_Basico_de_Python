@@ -746,4 +746,66 @@ def run():
 if __name__ == "__main__":
     run()
 ```
+## Explorando un Bucle Diferente: El Ciclo For
 
+El ciclo for es un tipo de bucle usado cuando se conozcan la cantidad de veces a iterar.
+
+Un contador es una variable que se encarga de contener valores que irán incrementando o decrementando cada vez que se ejecuta una acción que lo contenga. El incremento o decremento es llamado paso del contador y es siempre constante.
+
+**Ejemplo:** El marcador de un partido de fútbol, cada vez que un equipo anote un gol, aumenta su marcador en una unidad.
+
+**Ejemplo 2:** En las carreras de autos, cuando un vehículo pasa por la línea de meta, se incrementa en una unidad el número de vueltas dadas al circuito, o bien se decrementa el número de vueltas que faltan por realizar.
+
+Entonces, el incremento es siempre constante, el paso del contador no necesariamente puede ser una unidad, también puede incrementarse o decrementarse de a dos, tres, cuatro, hasta n. Es decir, puede ser cualquier número que conserve siempre el mismo valor durante todo el programa.
+
+Su sintaxis es:
+```Python
+variable = variable + constante(al incrementar)
+variable = variable - constante(al decrementar)
+```
+o de manera resumida:
+```Python
+variable += constante
+variable -= constante
+```
+Ejemplo:
+```Python
+gol_local = 0 #si anotan gol: gol_local = gol_local +1
+```
+Consejo: Es importante inicializar en cero a la variable cuando aparezca a ambos lados del símbolo de asignación
+
+### Ejemplo del bucle for en Python
+```Python
+def imprimir_numero(inicio, fin):
+    for inicio in range(fin+1):
+        print(f'Numero: {inicio}')
+
+
+def imprimir_numero_while(inicio, fin):
+    while inicio <= fin:
+        print(f'Numero: {inicio}')
+        inicio += 1
+
+def run():
+
+
+    while True:
+        print('')
+        print('*********************************************************')
+        print('*******************N U M E R O S**********************')
+        print('')
+        inicio = int(input('Digite el número inicial para la secuencial:  '))
+        print('')
+        fin = int(input('Digite el número final para la secuencial: '))
+        print('')
+
+        if inicio < fin:
+            imprimir_numero(inicio,fin)
+        else:
+            print(f'El numero inicial {inicio} debe ser ser menor al numero final {fin}.')
+
+
+
+if __name__ == "__main__":
+    run()
+```

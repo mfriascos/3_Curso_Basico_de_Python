@@ -6,13 +6,9 @@
 
 **Table of Contents**
 
-[TOCM]
+- [1/32 El arte de la programación](#1/32-el-arte-de-la-programacion)
 
-[TOC]
-
-##1/32 El arte de la programación
-
-##1/32 El arte de la programación
+## 1/32 El arte de la programación
 
 Los lenguajes de programación están por todos lados. Python un lenguaje que podemos aprender para iniciarnos en la ingeniería de software. Es utilizado en Drones, autos autónomos y hasta cohetes, nosrodea por todos lados.
 

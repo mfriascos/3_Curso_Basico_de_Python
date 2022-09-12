@@ -848,3 +848,45 @@ def run():
 if __name__ == "__main__":
     run()
 ```
+## Interrumpiendo ciclos con Break y Continue
+
+La instrucción continue en Python devuelve el control al comienzo del ciclo while o ciclo for. Esta instrucción rechaza todas las declaraciones restantes en la iteración actual del ciclo y mueve el control de regreso a la parte superior del mismo.
+
+La instrucción break en Python termina el ciclo actual y reanuda la ejecución en la siguiente instrucción. En otras palabras, break rompe el ciclo entero mientras que continue solo rompe la vuelta actual.
+
+Ejemplos de interrupción de ciclos con break y continue en Python
+
+**Ejemplo1**
+```Python
+def run():
+    for i in range(10000):
+        print(i)
+        if i == 5678:
+            break
+
+if __name__ == '__main__':
+    run()
+```
+**Ejemplo 2**
+```Python
+def run():
+    for contador in range(1000):
+        if contador % 2 != 0:
+            continue
+        print(contador)
+
+if __name__ == '__main__':
+    run()
+```
+**Ejemplo 3**
+```Python
+def run():
+    texto= input('Escribe un texto: ')
+    for letra in texto:
+        if letra == 'o':
+            break
+        print(letra)
+
+if __name__ == '__main__':
+    run()
+```

@@ -1136,3 +1136,31 @@ if __name__ == '__main__':
     run()
 ```
 
+## Proyecto: Generador de Contraseñas
+
+En este ejemplo, veremos cómo crear un generador de contraseñas en Python:
+
+**Generador de contraseñas**
+```Python
+import random
+import string
+
+def generar_contrasena():
+    caracter = string.ascii_lowercase + string.digits + string.punctuation + string.ascii_uppercase
+
+    contrasena = []
+
+    while (len(contrasena) < 16):
+        caracteres=random.choice(caracter)    
+        contrasena.append(caracteres)
+
+    contrasena = "".join(contrasena)
+    return contrasena
+
+def run():
+    contrasena = generar_contrasena()
+    print('Tu nueva contraseña es: '+ contrasena)
+
+if __name__ == "__main__":
+    run()
+```

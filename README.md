@@ -60,6 +60,12 @@
   - [Ejemplo de bucle en la vida real](#ejemplo-de-bucle-en-la-vida-real)
 - [El Ciclo While](#el-ciclo-while)
   - [Ejemplo de while en Python](#ejemplo-de-while-en-python)
+- [Explorando un Bucle Diferente: El Ciclo For](#explorando-un-bucle-diferente-el-ciclo-for)
+  - [Ejemplo del bucle for en Python](#ejemplo-del-bucle-for-en-python)
+- [Recorriendo un string con for](#recorriendo-un-string-con-for)
+- [Interrumpiendo ciclos con Break y Continue](#interrumpiendo-ciclos-con-break-y-continue)
+- [Proyecto: Prueba de Primalidad](#proyecto-prueba-de-primalidad)
+- [Proyecto: Videojuego](#proyecto-videojuego)
 
 
 

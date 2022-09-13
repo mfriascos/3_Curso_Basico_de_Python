@@ -66,6 +66,30 @@
 - [Interrumpiendo ciclos con Break y Continue](#interrumpiendo-ciclos-con-break-y-continue)
 - [Proyecto: Prueba de Primalidad](#proyecto-prueba-de-primalidad)
 - [Proyecto: Videojuego](#proyecto-videojuego)
+- [Almacenar Varios Valores en una variable: Listas](#almacenar-varios-valores-en-una-variable-listas)
+   - [Declarar lista](#declarar-lista)
+   - [Unir Listas](#unir-listas)
+   - [Partir listas como slices](#partir-listas-como-slices)
+   - [Extender una lista](#extender-una-lista)
+   - [Multiplicar listas](#multiplicar-listas)
+   - [Eliminar el último elemento de la lista](#eliminar-el-último-elemento-de-la-lista)
+   - [Ordenar lista](#ordenar-lista)
+   - [Eliminar un elemento](#eliminar-un-elemento)
+   - [Eliminar si conocemos su valor](#eliminar-si-conocemos-su-valor)
+   - [Saber qué métodos hay dentro de un elemento](#saber-qué-métodos-hay-dentro-de-un-elemento)
+   - [Modificar un elemento](#modificar-un-elemento)
+   - [Añadir un elemento al final](#añadir-un-elemento-al-final)
+   - [Organizar una lista](#organizar-una-lista)
+   - [Métodos adicionales para listas](#métodos-adicionales-para-listas)
+- [Entendiendo Como Funcionan las Tuplas](#entendiendo-como-funcionan-las-tuplas)
+    - [Cómo trabajar con tuplas en Python](#cómo-trabajar-con-tuplas-en-python)
+    - [Métodos para trabajar con tuplas](#métodos-para-trabajar-con-tuplas)
+- [¿Qué son los Diccionarios?](#¿qué-son-los-diccionarios)
+    - [Operaciones en diccionarios](#operaciones-en-diccionarios)
+    - [Cómo trabajar con diccionarios](#cómo-trabajar-con-diccionarios)
+- [Proyecto: Generador de Contraseñas](#proyecto-generador-de-contraseñas)
+  
+
 
 
 
@@ -1015,7 +1039,7 @@ my_lista = [1,2,3,4,5]
 my_lista.remove(3)
 my_lista #[1,2,4,5]
 
-### saber qué métodos hay dentro de un elemento
+### Saber qué métodos hay dentro de un elemento
 my_lista = [1,2,3,4,5]
 dir(my_lista) # ['__add__', '__class__', '__contains__', ...
 

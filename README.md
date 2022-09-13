@@ -965,7 +965,7 @@ if __name__ == "__main__":
     run()
 ```
 
-## Almacrnar Varios Valores en una variable: Listas
+## Almacenar Varios Valores en una variable: Listas
 
 Las listas nos permiten guardar múltiples valores en una sola variable. Estas listas en Python nos permiten guardar elementos del mismo tipo o diferentes, por lo que podemos tener strings, números enteros y decimales juntos en una misma variable. Las listas también son conocidas como arrays en otros lenguajes programación.
 

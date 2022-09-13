@@ -8,7 +8,7 @@ def run():
         for j in range(2,i):
             mod = i%j
             if mod == 0:
-                flag = False
+                flag = False 
                 break
             else:
                 flag = True

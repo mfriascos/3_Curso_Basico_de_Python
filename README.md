@@ -88,19 +88,6 @@
     - [Operaciones en diccionarios](#operaciones-en-diccionarios)
     - [Cómo trabajar con diccionarios](#cómo-trabajar-con-diccionarios)
 - [Proyecto: Generador de Contraseñas](#proyecto-generador-de-contraseñas)
-  
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## El arte de la programación
 

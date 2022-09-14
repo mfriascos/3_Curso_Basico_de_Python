@@ -3,6 +3,22 @@ import random
 import os
 
 
+def print_image(lists):
+    print ("""
+                H A N G E D    G A M E 
+
+                ............(0 0)
+                    .---oOO-- (_)-----.
+                    ╔═════════════════╗
+                    {}   {}    
+                    ╚═════════════════╝
+            ----------------------oOO
+                    ........|__|__|
+                .......... || ||
+                ||||....... ooO Ooo 
+            """.format('║',lists))
+
+
 def palabra_oculta(s_word):
     oculta = []
     for i in range(s_word):
@@ -22,21 +38,8 @@ def run():
     cont = 1
     word = get_word()
     s_word = len(word)
-    h_word = s_word*'X'
-    print ("""
-                H A N G E D    G A M E 
-
-                ............(0 0)
-                    .---oOO-- (_)-----.
-                    ╔═════════════════╗
-                    {}       {}    
-                    ╚═════════════════╝
-            ----------------------oOO
-                    ........|__|__|
-                .......... || ||
-                ||||....... ooO Ooo 
-            """.format('║',h_word))
-    
+    h_word = s_word*'X '
+    print_image(h_word)    
 
     # print('')
     # print(word)
@@ -71,19 +74,7 @@ def run():
                                    
             list_develada = " ".join(list_oculta)
             list_develada = list_develada.upper()
-            print ("""
-                H A N G E D    G A M E 
-
-                ............(0 0)
-                    .---oOO-- (_)-----.
-                    ╔═════════════════╗
-                    {}   {}    
-                    ╚═════════════════╝
-            ----------------------oOO
-                    ........|__|__|
-                .......... || ||
-                ||||....... ooO Ooo 
-            """.format('║',list_develada))
+            print_image(list_develada)
 
             if cont2 >= 3:
                 print('')
@@ -98,19 +89,7 @@ def run():
                         word = " ".join(word)
                         os.system("clear")
                         print('¡Felicitaciones, Ganaste!')
-                        print ("""
-                                H A N G E D    G A M E 
-
-                                ............(0 0)
-                                    .---oOO-- (_)-----.
-                                    ╔═════════════════╗
-                                    {}   {}    
-                                    ╚═════════════════╝
-                            ----------------------oOO
-                                    ........|__|__|
-                                .......... || ||
-                                ||||....... ooO Ooo 
-                            """.format('║',word.upper()))
+                        print_image(word.upper())
                         break 
                     else:
                         print('Palabra incorrecta, la palabra es {} '.format(word.upper()))

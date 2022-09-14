@@ -1,5 +1,22 @@
 # Hanged Game
-import random  
+import random 
+
+def comparar_palabras(word,s_word):
+    letter = input('Type a letter: ')
+    list_oculta = palabra_oculta(s_word)
+    palabra = list(word)
+    print(list_oculta)
+    print(palabra)
+
+    for i in word:
+        if letter == i:      
+            pos_letra_correcta = word.find(i)
+            list_oculta[pos_letra_correcta] = letter.upper()
+            print(list_oculta)
+            True
+        else:
+            False
+            
 
 def palabra_oculta(s_word):
     oculta = []
@@ -41,16 +58,9 @@ def run():
     print('')
     print(word)
     print('')
-    letter = input('Type a letter: ')
-    list_oculta = palabra_oculta(s_word)
-    palabra = list(word)
-    print(list_oculta)
-    print(palabra)
-    for i in word:
-        if letter == i:      
-            pos_letra_correcta = word.find(i)
-            list_oculta[pos_letra_correcta] = letter.upper()
-            print(list_oculta)
+
+    comparar_palabras(word,s_word)
+    
             
             
 
